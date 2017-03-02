@@ -89,20 +89,20 @@ public class StringBufferBuilder {
 		System.out.println(s20.indexOf("a",2));
 		
 		String s31 = "Anish";
-        String s32 = "Anish".intern();
+        String s32 = "Anish";
 
-        String s33 = new String("Anish");		
+        String s33 = new String("Anish").intern();		
 		
         if(s32=="Anish")
         {
         	System.out.println("s31 and s32 are same");
         }
 		
-//        if(s31==s33)
-//        {
-//        	System.out.println("s31 and s33 are same");
-//        }
-//		        
+        if(s31==s33)
+        {
+        	System.out.println("s31 and s33 are same");
+        }
+		        
 	}
 
 }
