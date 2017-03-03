@@ -6,7 +6,7 @@ public class StringBufferBuilder {
 		
 		boolean a=true;
 		boolean b=false;
-		String s1="Pavithran";
+		String s1="MYDOGISCUTE";
 		String s20="Pavithran";
 		String s2="ABC";
 		String s3="DEF";
@@ -102,7 +102,41 @@ public class StringBufferBuilder {
         {
         	System.out.println("s31 and s33 are same");
         }
-		        
+		
+        //lastIndexOf
+        
+        System.out.println(s1.lastIndexOf("O",5));
+
+        //replaceAll
+        
+        String prash = "Hello";
+        StringBuffer prash1= new StringBuffer("Hello");
+        
+        System.out.println(prash.contentEquals(prash1));
+        System.out.println(prash.equals(prash1));
+        
+        
+        String Str = new String("Tutorials to Tutorialspoint.com");
+
+        System.out.println(Str.replace("Tutorials", "AMROOD"));
+        System.out.println(Str.replaceAll("\\s", ""));
+        System.out.println(Str.replaceFirst("Tutorials", "AMROOD"));
+        
+        //split()
+        
+        String Str1 = new String("Welcome-to-Tutorialspoint-com");
+        
+        for(String Str2 : Str1.split("-",2))
+        {
+        	System.out.println(Str2);
+        }
+        
+        int shift=4;
+        System.out.println(shift>>>2);
+        
+        String sub="Pavithran";
+        System.out.println(sub.subSequence(1,2));
+        
 	}
 
 }
