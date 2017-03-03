@@ -134,9 +134,16 @@ public class StringBufferBuilder {
         int shift=4;
         System.out.println(shift>>>2);
         
-        String sub="Pavithran";
-        System.out.println(sub.subSequence(1,2));
+        String sub="Hello";
+        System.out.println(sub.subSequence(0,5));
         
+        System.out.println(sub.substring(1,2));        
+        
+        Integer a10=new Integer(10);
+        System.out.println(a10.toString());
+        
+        Object obj = new Object();
+        obj.toString();
 	}
 
 }
