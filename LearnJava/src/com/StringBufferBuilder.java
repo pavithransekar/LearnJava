@@ -1,6 +1,8 @@
 package com;
+import java.applet.*;
+import java.awt.*;
 
-public class StringBufferBuilder {
+public class StringBufferBuilder extends Applet  {
 
 	public static void main(String[] args) {
 		
@@ -144,6 +146,16 @@ public class StringBufferBuilder {
         
         Object obj = new Object();
         obj.toString();
+        
+
+
 	}
 
+	public static void recur(){
+		recur();
+	}
+	  public void paint (Graphics g) {
+	      g.drawString ("Hello World", 25, 50);
+	   }
+	
 }
