@@ -1,8 +1,6 @@
 package com;
-import java.applet.*;
-import java.awt.*;
 
-public class StringBufferBuilder extends Applet  {
+public class StringBufferBuilder {
 
 	public static void main(String[] args) {
 		
@@ -14,7 +12,6 @@ public class StringBufferBuilder extends Applet  {
 		String s3="DEF";
 		String s4="";
 		char[] ch2={'P','A','V','I'};
-		String s15=null;
 		
 		//String Buffer
 		
@@ -143,19 +140,7 @@ public class StringBufferBuilder extends Applet  {
         
         Integer a10=new Integer(10);
         System.out.println(a10.toString());
-        
-        Object obj = new Object();
-        obj.toString();
-        
-
 
 	}
 
-	public static void recur(){
-		recur();
-	}
-	  public void paint (Graphics g) {
-	      g.drawString ("Hello World", 25, 50);
-	   }
-	
 }
