@@ -1,4 +1,6 @@
 package com;
+import java.util.Date;
+
 
 public class StringBufferBuilder {
 
@@ -12,6 +14,7 @@ public class StringBufferBuilder {
 		String s3="DEF";
 		String s4="";
 		char[] ch2={'P','A','V','I'};
+		Date date = new Date();
 		
 		//String Buffer
 		
@@ -141,6 +144,8 @@ public class StringBufferBuilder {
         Integer a10=new Integer(10);
         System.out.println(a10.toString());
 
+        System.out.println(date.toString());
+        
 	}
 
 }
