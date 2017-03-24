@@ -1,11 +1,15 @@
 package com;
-import java.util.Date;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 
 public class StringBufferBuilder {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		
+
 		boolean a=true;
 		boolean b=false;
 		String s1="MYDOGISCUTE";
@@ -14,6 +18,7 @@ public class StringBufferBuilder {
 		String s3="DEF";
 		String s4="";
 		char[] ch2={'P','A','V','I'};
+		int[] arr={1,2,3,4,5};
 		Date date = new Date();
 		
 		//String Buffer
@@ -145,6 +150,35 @@ public class StringBufferBuilder {
         System.out.println(a10.toString());
 
         System.out.println(date.toString());
+
+        
+        //for loop
+        for(int i=0;i<arr.length;i++)
+        {
+        	System.out.println(arr[i]);
+        }
+        
+        //for each loop
+        for(int i1: arr)
+        {
+        	System.out.println(i1);
+        }
+        
+        Date d=new Date(2017,2,23);
+        Date d1=new Date(2017,2,24);
+        
+        SimpleDateFormat sdf= new SimpleDateFormat("dd.MM.yyyy");
+        Date d3= sdf.parse("21.02.1975");
+        
+        
+        System.out.println("WHATS HAPPENING HERE "+d3.toString());
+        
+        String inputString = "11-11-2012";
+        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+        Date inputDate = dateFormat.parse(inputString);        
+        
+        System.out.println(inputDate);
+        
         
 	}
 
