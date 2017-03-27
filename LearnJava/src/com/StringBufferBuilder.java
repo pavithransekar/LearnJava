@@ -177,8 +177,7 @@ public class StringBufferBuilder {
         DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         Date inputDate = dateFormat.parse(inputString);        
         
-        System.out.println(inputDate);
-        
+        System.out.println(inputDate);        
         
 	}
 
