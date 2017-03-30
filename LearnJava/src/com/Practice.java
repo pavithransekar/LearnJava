@@ -1,12 +1,12 @@
-package projecteuler;
+package com;
 
-public class Problem11 {
+import java.math.BigInteger;
 
+public class Practice {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		
-		
+		BigInteger b;
 		int[][] a={{8,2,22,97,38,15,0,40,0,75,4,5,7,78,52,12,50,77,91,8},
 				{49,49,99,40,17,81,18,57,60,87,17,40,98,43,69,48,4,56,62,0},
 				{81,49,31,73,55,79,14,29,93,71,40,67,53,88,30,03,49,13,36,65},
@@ -27,56 +27,12 @@ public class Problem11 {
 				{20,69,36,41,72,30,23,88,34,62,99,69,82,67,59,85,74,4,36,16},
 				{20,73,35,29,78,31,90,1,74,31,49,71,48,86,81,16,23,57,5,54},
 				{1,70,54,71,83,51,54,69,16,92,33,48,61,43,52,1,89,19,67,48}};
-		long d=0,r=0,d1=0,d2=0;
-		long max=0, currentMax=0;
-		
-		for(int i=0;i<a.length;i++){
-			for(int j=0;j<a.length;j++){
-				
-				d=(i<=a.length-4)?a[i][j]*a[i+1][j]*a[i+2][j]*a[i+3][j]:0;
-				r=(j<=a.length-4)?a[i][j]*a[i][j+1]*a[i][j+2]*a[i][j+3]:0;
-				d1=(i<=a.length-4 && j<=a.length-4)?a[i][j]*a[i+1][j+1]*a[i+2][j+2]*a[i+3][j+3]:0;
-//				System.out.println(i+" "+j);
-				d2=(i<=a.length-4 && j>=3)?a[i][j]*a[i+1][j-1]*a[i+2][j-2]*a[i+3][j-3]:0;
-				
-				max=findMax(d, r, d1, d2);
-				
-				if(max>currentMax)
-				{
-//					System.out.println(max+" "+i+" "+j);
-					currentMax=max;
-				}
-				
-			}
 			
+		for(int i=0;i<100;i++){
+			
+			b= new BigInteger(Integer.toString(a[i][i+1]));
 		}
-		
-		
-		System.out.println(currentMax);
-		
-
-	}
-	
-	public static long findMax(long a,long b,long c, long d)
-	{
-		
-		
-		
-		if(a>b)
-		{
-			b=a;
-		}
-		if(b>c)
-		{
-			c=b;
-		}
-		if(c>d)
-		{
-			return c;
-		}
-		
-		return d;
+			
 		
 	}
-
 }
